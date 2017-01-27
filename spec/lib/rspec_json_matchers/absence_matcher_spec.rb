@@ -1,9 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe RSpecJsonMatchers::AbsenceMatcher do
-  RSpecJsonMatchers.define_api_matcher :absent do
-    absent { absent }
-  end
+  # See `spec/json_matchers/absence_matcher_objects.rb` for matcher definitions
 
   let(:valid_hash) { {} }
   let(:invalid_hash) { { absent: :not_absent } }
